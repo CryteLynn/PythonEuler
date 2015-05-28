@@ -1,7 +1,1 @@
-multiples = []
-
-for num in xrange(1, 1000):
-    if num % 3 == 0 or num % 5 == 0:
-        multiples.append(num)
-
-print sum(multiples)
+print sum([x for x in xrange(1, 1000) if x % 3 == 0 or x % 5 == 0])
